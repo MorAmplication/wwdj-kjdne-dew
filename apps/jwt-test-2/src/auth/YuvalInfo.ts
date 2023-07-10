@@ -1,8 +1,8 @@
 import { Field, ObjectType } from "@nestjs/graphql";
-import { User } from "../user/base/User";
+import { Yuval } from "../yuval/base/Yuval";
 
 @ObjectType()
-export class UserInfo implements Partial<User> {
+export class YuvalInfo implements Partial<Yuval> {
   @Field(() => String)
   id!: string;
   @Field(() => String)
