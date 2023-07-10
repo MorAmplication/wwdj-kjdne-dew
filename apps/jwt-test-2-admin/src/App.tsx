@@ -9,6 +9,10 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
+import { YuvalList } from "./yuval/YuvalList";
+import { YuvalCreate } from "./yuval/YuvalCreate";
+import { YuvalEdit } from "./yuval/YuvalEdit";
+import { YuvalShow } from "./yuval/YuvalShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +45,13 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
+        />
+        <Resource
+          name="Yuval"
+          list={YuvalList}
+          edit={YuvalEdit}
+          create={YuvalCreate}
+          show={YuvalShow}
         />
       </Admin>
     </div>
